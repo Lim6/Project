@@ -33,7 +33,7 @@ top.title("Chatter")
 
 messages_frame = tkinter.Frame(top)
 my_msg = tkinter.StringVar()  # For the messages to be sent.
-my_msg.set("Type messages here")
+my_msg.set("")
 scrollbar = tkinter.Scrollbar(messages_frame)  # To navigate through past messages.
 # Following will contain the messages.
 msg_list = tkinter.Listbox(messages_frame, height=20, width=65, yscrollcommand=scrollbar.set)
@@ -47,6 +47,9 @@ entry_field.bind("<Return>", send)
 entry_field.pack()
 send_button = tkinter.Button(top, text="Send", command=send)
 send_button.pack()
+quit_button = tkinter.Button(top, text = "Quit", command = quit )
+quit_button.place(x=225,y=343)
+
 
 top.protocol("WM_DELETE_WINDOW", on_closing)
 
