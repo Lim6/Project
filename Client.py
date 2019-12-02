@@ -26,7 +26,7 @@ def send(event=None):  # event is passed by binders.
         client_socket.send(bytes(msg, "utf8"))
 
     elif msg == "/weirdo":
-        msg == "( ͡° ͜ʖ ͡°)"
+        msg = "( ͡° ͜ʖ ͡°)"
         client_socket.send(bytes(msg, "utf8"))
      
     elif msg == "/smile" :
