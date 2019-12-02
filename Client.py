@@ -21,7 +21,20 @@ def send(event=None):  # event is passed by binders.
     if msg == "{quit}":
         client_socket.close()
         top.quit()
+    elif msg == "/shrug":
+        msg = "ʅ（◞‿◟）ʃ"
+        client_socket.send(bytes(msg, "utf8"))
 
+    elif msg == "/weirdo":
+        msg == "( ͡° ͜ʖ ͡°)"
+        client_socket.send(bytes(msg, "utf8"))
+     
+    elif msg == "/smile" :
+        msg = "•ᴗ•"
+        client_socket.send(bytes(msg, "utf8"))
+    elif msg == "/nani" :
+        msg = "ლ(ಠ_ಠლ)"
+        client_socket.send(bytes(msg, "utf8"))
 
 def on_closing(event=None):
     """This function is to be called when the window is closed."""
@@ -51,18 +64,13 @@ send_button.pack()
 top.protocol("WM_DELETE_WINDOW", on_closing)
 
 #----Now comes the sockets part----
-HOST = input('Enter host: ')
-PORT = input('Enter port: ')
-if not PORT:
-    PORT = 33000
-else:
-    PORT = int(PORT)
+
 
 BUFSIZ = 1024
-ADDR = (HOST, PORT)
+
 
 client_socket = socket(AF_INET, SOCK_STREAM)
-client_socket.connect(ADDR)
+client_socket.connect(("localhost", 1234))
 
 receive_thread = Thread(target=receive)
 receive_thread.start()
