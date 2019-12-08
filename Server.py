@@ -25,6 +25,7 @@ def handle_client(client):  # Takes client socket as argument.
         msg = client.recv(BUFSIZ)
         if msg != bytes("{quit}", "utf8"):
             broadcast(msg, name+": ")
+       
         else:
             client.send(bytes("{quit}", "utf8"))
             client.close()
@@ -43,8 +44,8 @@ def broadcast(msg, prefix=""):  # prefix is for name identification.
 clients = {}
 addresses = {}
 
-HOST = '127.0.0.1'
-PORT = 33000
+HOST = 'localhost'
+PORT = 1234
 BUFSIZ = 1024
 ADDR = (HOST, PORT)
 
