@@ -60,7 +60,7 @@ entry_field.bind("<Return>", send)
 entry_field.pack()
 send_button = tkinter.Button(top, text="Send", command=send)
 send_button.pack()
-quit_button = tkinter.Button(top, text = "Quit", command = quit )
+quit_button = tkinter.Button(top, text = "Quit", command = on_closing)
 quit_button.place(x=225,y=343)
 
 
