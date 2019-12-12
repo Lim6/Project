@@ -30,7 +30,7 @@ The contents of the chat will be deleted once a connection with the client is cl
 
 DEMO VIDEO:
 
-https://www.youtube.com/watch?v=SerBANZfPUo&feature=emb_title
+https://youtu.be/Xi3eyN7Gmf4
 
 References:
 
