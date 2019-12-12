@@ -13,20 +13,25 @@ Start the Server code
 Start 2 of the Client codes(Either from the same computer or 2 seperate computers)
 Type your name into the Chat room
 Now you are able to chat between clients
+To send an textmoji enter /textmoji name ex(/shrug, /smile, /weirdo)
 To quit, either click on the quit button or type /quit
 
 
 1. Feature #1
 
-Clients enter the chatroom and is notified who and when has joined the chat.
+Clients enter the chatroom and is notified who and when has joined the chat
 
 2. Feature #2
 
-Clients are able to chat with other clients in the app
+Clients are able to chat with other clients in the Web-Chat GUI
 
 3. Feature #3 
 
 The contents of the chat will be deleted once a connection with the client is closed
+
+4. Feature #4
+
+Users can send textmojis in messages 
 
 DEMO VIDEO:
 
