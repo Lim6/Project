@@ -36,7 +36,7 @@ References:
 
 LAB 04 ChatRoom with Socket Programming
 
-Team Members
+Team Members:
 
 Kevin Liu, Coder and Debugger
 
